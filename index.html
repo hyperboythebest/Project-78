@@ -1,0 +1,64 @@
+<html style="background-color: aqua;">
+<head>
+<title> My Family Book </title>
+<link rel=“stylesheet” href=“PROJECT-78FAMILYBOOK.css”>
+</head>
+<body style=text-align:center;>
+<h1 style="background-color: brown;"> My Family Book </h1>
+<br>
+
+
+
+<b>Click the nextbutton</b>
+
+<h1 style="background-color: chocolate;">My Mom</h1>
+
+<h1 style="background-color:lightcoral;">My Sister</h1>
+
+<h1 style="background-color:green;">(Click next button twelves times) My Dad</h1>
+
+<h1 style="background-color:orangered;">Me!!!</h1>
+
+
+
+
+<img src="" style="width:270 px; height:350 px;" id="Family_member_image">
+<h4 id="Family_member_name"></h4>
+<button id="Nextbutton" onclick="update();">Next</button>
+<script>
+   
+    var images=[
+   "https://w7.pngwing.com/pngs/486/108/png-transparent-father-others-miscellaneous-child-hand-thumbnail.png",
+
+    "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f7/A_Happy_Working_Mom_Cartoon.svg/1008px-A_Happy_Working_Mom_Cartoon.svg.png",
+
+    "https://us.123rf.com/450wm/yupiramos/yupiramos1905/yupiramos190505227/122760736-little-girl-avatar-character-vector-illustration-design.jpg?ver=6",
+    "https://images.assetsdelivery.com/compings_v2/irwanjos/irwanjos1509/irwanjos150900003.jpg",
+    "", 
+    ]
+    var names=[
+    "","Rajesh",
+        "Bindu",
+        "Shalini",
+        "Samuel",
+      ,
+    "Me",
+    
+    ]
+
+    var i=0;
+    function update(){
+        i++;
+        var Numbers_of_family_member_in_array=14
+        if(i>Numbers_of_family_member_in_array){
+            i=0;
+        }
+        var updatedimage= images[i];
+        var updatedname= names[i];
+        document.getElementById("Family_member_image").src= updatedimage;
+        document.getElementById("Family_member_name").src= updatedname;
+
+    }
+</script>
+</body>
+</html>
